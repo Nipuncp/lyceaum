@@ -1,0 +1,10 @@
+import random_word
+secret_word = random_word.secret_word()
+print (secret_word)
+tries = 10
+guess =  ['_' for i in range(len(secret_word))]
+print(guess)          
+guess_letter = input("Let's play the hangman word game. You have tries remaining, please enter a letter to guess the word")
+if guess_letter in secret_word:
+    guess.insert(guess_letter in secret_word, guess_letter)
+print(guess)        

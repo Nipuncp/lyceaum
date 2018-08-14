@@ -1,0 +1,11 @@
+import random
+import math
+def monte_carlo(n):
+    inside_circle = 0
+    while n:
+        x = random.uniform(0, 1)
+        y = random.uniform(0,1)
+        n - = 1
+        if math.sqrt(x**2 + y**2)<1:
+            inside_circle += 1
+    pi = 4 * inside_circle/n

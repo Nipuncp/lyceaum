@@ -1,0 +1,12 @@
+from sys import argv
+
+script, filename = argv
+
+print(f"We're going to erase {filename}.")
+print("If you don't want that. hit Ctrl-C (^C).")
+print("If you do want that. Hit Return")
+
+input("?")
+
+print("Opening the file...")
+target = open(filename, 'w')

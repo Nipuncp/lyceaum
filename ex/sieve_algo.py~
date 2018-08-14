@@ -1,0 +1,3 @@
+def sieve(n):
+    list_n = [ i for i in range(n)]
+    print (list_n)

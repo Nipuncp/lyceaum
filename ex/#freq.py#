@@ -1,0 +1,5 @@
+def freq(s):
+    dic = {}
+    for letter in s:
+        dic[letter] = s.count(letter)
+    return dic
